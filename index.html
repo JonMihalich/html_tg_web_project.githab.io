@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Веб-приложение</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>time management</title>
+    <style>
+        #main {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #notes, #calendar {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <div id="buttons">
-        <button id="notesButton">Заметки</button>
-        <button id="calendarButton">Календарь</button>
+    <div id="main">
+        <h1>Заметки и календарь</h1>
+        <button id="notes">Заметки</button>
+        <button id="calendar">Календарь</button>
     </div>
-
-    <script>
-        // Обработчики нажатия кнопок
-        document.getElementById("notesButton").addEventListener("click", function() {
-            // Здесь можно добавить логику для кнопки "Заметки"
-            alert("Вы нажали на кнопку 'Заметки'");
-        });
-
-        document.getElementById("calendarButton").addEventListener("click", function() {
-            // Здесь можно добавить логику для кнопки "Календарь"
-            alert("Вы нажали на кнопку 'Календарь'");
-        });
-    </script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>

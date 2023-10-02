@@ -2,41 +2,24 @@
 <html>
 <head>
     <title>Веб-приложение</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #0074d9;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
-    <div class="buttons">
-        <button class="button">Заметки</button>
-        <button class="button">Календарь</button>
+    <div id="buttons">
+        <button id="notesButton">Заметки</button>
+        <button id="calendarButton">Календарь</button>
     </div>
+
+    <script>
+        // Обработчики нажатия кнопок
+        document.getElementById("notesButton").addEventListener("click", function() {
+            // Здесь можно добавить логику для кнопки "Заметки"
+            alert("Вы нажали на кнопку 'Заметки'");
+        });
+
+        document.getElementById("calendarButton").addEventListener("click", function() {
+            // Здесь можно добавить логику для кнопки "Календарь"
+            alert("Вы нажали на кнопку 'Календарь'");
+        });
+    </script>
 </body>
 </html>
